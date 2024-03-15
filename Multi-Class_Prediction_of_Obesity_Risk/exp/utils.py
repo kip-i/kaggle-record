@@ -54,7 +54,7 @@ class DataPlot:
         if self.df[column2].dtype == "object":
             raise ValueError("column2 must be number variable")
 
-        for uniq in self.df[column2].unique():
+        for uniq in self.df[column1].unique():
             if uniq is np.nan:
                 continue
 
